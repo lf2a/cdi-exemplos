@@ -38,7 +38,9 @@ Estado compartilhado em todas as interações dos usuários com um aplicativo da
 
 ## Dependente
 
+```java
 @Dependent
+```
 O escopo padrão se nenhum for especificado; significa que existe um objeto para servir exatamente a um cliente (bean) e tem o mesmo ciclo de vida desse cliente (bean).
 
 ## Conversação
