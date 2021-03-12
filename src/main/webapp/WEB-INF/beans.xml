@@ -6,4 +6,7 @@
     <alternatives>
         <class>com.github.lf2a.alternative.TestCarroImpl</class>
     </alternatives>
+    <interceptors>
+        <class>com.github.lf2a.interceptadores.LoggedInterceptor</class>
+    </interceptors>
 </beans>
