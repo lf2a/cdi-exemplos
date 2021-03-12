@@ -83,3 +83,13 @@ Você pode especificar um argumento para o qualificador `@Named` para usar um no
 
 Com essa anotação, a página Facelets se referiria ao bean como `MyPrinter`.
 
+#
+Existem dois tipos de arquivos de bean: arquivos de bean explícitos e arquivos de bean implícitos.
+
+Um arquivo de bean explícito é um arquivo que contém um descritor de implantação (beans.xml), que pode ser um arquivo vazio, não contém nenhum número de versão ou contém o número de versão 1.1 com o atributo `bean-discovery-mode` definido como `all`.
+
+O CDI pode gerenciar e injetar qualquer bean em um arquivo explícito, exceto aqueles anotados com `@Vetoed`.
+
+Um arquivo de bean implícito é um arquivo que contém alguns beans anotados com um tipo de escopo, não contém descritor de implementação (beans.xml) ou contém um descritor de implementação (beans.xml) com o atributo `bean-discovery-mode` definido como `annotated`.
+
+Em um arquivo implícito, o CDI só pode gerenciar e injetar beans anotados com um tipo de escopo.
